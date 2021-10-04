@@ -1,0 +1,37 @@
+body {
+    background-image: url("img/back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+    margin: 325px 35% 0px;
+    color: whitesmoke;
+}
+.form-group {
+    margin: 20px auto;
+}
+.btn {
+    width: 100px !important;
+}
+
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .content {
+        margin: 200px 20px 0px;
+    }
+}
+
+/* Medium (md) devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .content {
+        margin: 275px 200px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .content {
+        margin: 275px 200px 0px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Play with Effects</title>
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>  
+	    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header><h1 class="text-center">Image Editor using <span id="js">JS</span></h1></header>
+        
+        
+
+        <div class="main container-fluid">
+            <div class="d-flex flex-row">
+
+                <div class="controls py-3 px-4 m-3">
+
+                    <form action="">
+
+                        <div class="row mb-3">
+                            <label for="spacing" class="col-sm-4 col-form-label">Spacing  </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="10" min="0" max="50" id="spacing">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="color" class="col-sm-4 col-form-label">Base Color  </label>
+                            <div class="col-sm-8">
+                                <input type="color" class="form-control" value="#ffffff" id="color">
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <label for="blur" class="col-sm-4 col-form-label">Blur </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="0" min="0" max="100" id="blur">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="brightness" class="col-sm-4 col-form-label">Brightness </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="100" min="0" max="200" id="brightness">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="contrast" class="col-sm-4 col-form-label">Contrast </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="100" min="0" max="250" id="contrast">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="grayscale" class="col-sm-4 col-form-label">GrayScale </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="0" min="0" max="100" id="grayscale">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="hue-rotate" class="col-sm-4 col-form-label">Hue-Rotate </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="0" min="0" max="360" id="hue-rotate">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="invert" class="col-sm-4 col-form-label">Invert </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="0" min="0" max="100" id="invert">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="opacity" class="col-sm-4 col-form-label">Opacity </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="100" min="0" max="100" id="opacity">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="saturate" class="col-sm-4 col-form-label">Saturate </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="10" min="0" max="100" id="saturate">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <label for="sepia" class="col-sm-4 col-form-label">Sepia </label>
+                            <div class="col-sm-8">
+                                <input type="range" class="custom-range" value="0" min="0" max="100" id="sepia">
+                            </div>
+                        </div>
+                    </form>
+
+                    
+                </div>
+
+                <div class="image-area py-3 px-4 m-3 d-flex flex-column align-items-center justify-content-center">
+                    <div id="img-box"><img src="img/switzerland-4k-desktop-background-hd-wallpaper-thumb.jpg" class="img-float " id="img"></div>
+                    <a href="" class="btn btn-light">Reset</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer text-right">Made with <i class="fas fa-heart"></i> by <a href="https://github.com/AnshikaAgrawal5501">Anshika Agrawal</a></p>
+
+        <script src="script.js"></script>
+        <!-- <script src="sc.js"></script> -->
+
+    </body>
+</html>

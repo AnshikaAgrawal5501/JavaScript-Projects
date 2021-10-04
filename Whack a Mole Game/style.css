@@ -1,0 +1,100 @@
+body {
+    background-image: url("Images/back2.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.game {
+    width: 40vw;
+    margin: 150px 0 auto;
+}
+.hole {
+    box-sizing: border-box;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    top: 70%;
+    left: 10px;
+}
+
+.mole {
+    background-image: url("Images/mole1.png");
+    background-position: bottom;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s;
+}
+.score-board {
+    margin-top: 100px;
+}
+.up{
+    top: 0;
+}
+
+.btn {
+    width: 80%;
+}
+.btn-primary {
+    background-color: purple !important;
+    border-color: purple !important;
+}
+.btn-primary:hover {
+    background-color: rgb(228, 28, 228) !important;
+    border-color: rgb(228, 28, 228) !important;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(128, 0, 128, 0.4) !important;
+}
+
+@media (max-width: 568px) {
+    h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .game {
+        width: 100%;
+        margin-top: 0px;
+    }
+    img {
+        height: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .game {
+        width: 70%;
+        margin-top: auto;
+    }
+    img {
+        height: 35%;
+    }
+    .mole {
+        background-size: 70%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .block {
+        justify-content: center !important;
+    }
+    img {
+        width: 80%;
+    }
+    .score-board {
+        margin-top: 50px;
+    }
+}

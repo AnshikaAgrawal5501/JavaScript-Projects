@@ -1,0 +1,53 @@
+body {
+    background-color: #292C34;
+}
+
+header {
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 0;
+}
+
+h1 {
+    color: #24272E;
+    font-weight: bold;
+}
+
+.controls {
+    background-color: white;
+    width: 40%;
+}
+
+.image-area {
+    width: 100%;
+    position: relative;
+}
+
+#img-box {
+    border: 10px solid white;
+}
+
+.btn {
+    position: absolute;
+    top: 550px;
+    width: 100px;
+}
+
+
+.footer {
+    font-family: 'Architects Daughter', cursive;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+p>a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+i {
+    color: red;
+}
