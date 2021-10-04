@@ -1,0 +1,47 @@
+body {
+    background-image: url("img/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transition: background 5s ease;
+}
+
+.main {
+    height: 100vh;
+}
+
+.clock {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}
+
+.hour-hand {
+    border: 3px solid black;
+    width: 30%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+
+.min-hand {
+    border: 2.5px solid black;
+    width: 45%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+
+.sec-hand {
+    border: 1px solid black;
+    width: 40%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=New+Tegomin&display=swap');
+
+body {
+    height: 100vh;
+    background: url("back.jpg") center;
+}
+
+.clock {
+    box-sizing: content-box;
+    border: 15px solid #24272E;
+    font-size: 40px;
+    font-family: 'Dela Gothic One', cursive;
+    background-color: white;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.badge {
+    position: absolute;
+    top: -25px;
+    left: 97px;
+    background-color: #E2584D;
+    color: white;
+    font-family: 'New Tegomin', serif;
+    font-size: 20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 580px) {
+    .clock {
+        font-size: 28px;
+        width: 200px;
+    }
+    .badge {
+        top: -25px;
+        left: 59px;
+        font-size: 15px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 580px) and (max-width: 775px) {
+    .clock {
+        font-size: 35px;
+        width: 250px;
+    }
+    .badge {
+        top: -22px;
+        left: 87px;
+        font-size: 15px;
+    }
+}
